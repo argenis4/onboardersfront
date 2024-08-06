@@ -7,7 +7,7 @@ export default function DownloadButton({ filters }) {
   const handleDownload = async () => {
 
     try {
-      const response = await axios.post('http://localhost:3000/api/download', filters, {
+      const response = await axios.post('https://onboardersbackend.onrender.com/api/download', filters, {
         responseType: 'blob',
       });
 console.log(response)
